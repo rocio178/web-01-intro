@@ -1,0 +1,20 @@
+body { background-color: aquamarine;}
+
+#cabecera { 
+    background-color:beige
+}
+
+#cabecera img { 
+   
+    width: 150px;
+}
+
+footer {
+    background-color: black;
+    color : white;
+}
+
+img {
+    width: 300px;
+}
+

@@ -1,0 +1,49 @@
+/* estilo etiqueta */
+body { background-color: aquamarine;}
+
+
+
+/* estilo id cabecera nested */
+
+#cabecera {
+    display: flex;
+    justify-content: space-between;
+    background-color:beige;
+    img { 
+   
+        width: 150px;
+    }
+}
+
+/* estilo clase  */
+.gallery {
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+/* definicion de columnas de la galeria 
+100% = 1 columna
+ 50% = 2 columnas
+ 33% = 3 columnas
+ 25% = 4 columnas
+ 20% = 5 columnas
+ 100/numcolumna$ = numcolumnas columnas
+
+
+*/
+.gallery-item {
+    width : 25%;
+}
+
+/* estilos etiqueta */
+footer {
+    background-color: black;
+    color : white;
+}
+
+img {
+    width: 100%;
+}
+

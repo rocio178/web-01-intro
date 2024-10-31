@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        #miCanvas        {
+            background-color: aqua;
+        }
+        #canvas02        {
+            border:3px red solid;
+        } 
+
+    </style>
+    <script>
+        function ejercicio1(){
+                ej1=document.getElementById("miCanvas"); //Asigno a una variable el elemento del html que voy a usar
+                lienzo1=ej1.getContext("2d"); //Alisto el canvas para que funcione
+                lienzo1.lineWidth=1; //Defino el ancho de la linea en pixeles
+                lienzo1.strokeStyle = '#000'; //Defino el color en hexagesimal
+                 
+                //EJEX
+                lienzo1.beginPath(); // Pongo el lápiz
+                lienzo1.moveTo(150,0); // lo ubicó para iniciar el dibujo
+                lienzo1.lineTo(150,300); // trazo la linea hasta este punto
+                lienzo1.stroke(); // levanto el lápiz
+                lienzo1.closePath(); // me alisto para realizar otra parte del dibujo
+                //EJE Y
+                lienzo1.beginPath(); // Pongo el lápiz
+                lienzo1.moveTo(0,150);// lo ubicó para iniciar el dibujo
+                lienzo1.lineTo(300,150);// trazo la linea hasta este punto
+                lienzo1.stroke();// levanto el lápiz
+                lienzo1.closePath();// me alisto para realizar otra parte del dibujo
+        }
+
+    </script>
+</head>
+<body>
+    <h1>API CANVAS - 01</h1>
+    <canvas width="500px" height="300" id="miCanvas" ></canvas>
+    <canvas width="400px" height="400" id="canvas02" ></canvas>
+    <script>
+        ejercicio1();
+    </script>
+</body>
+</html>

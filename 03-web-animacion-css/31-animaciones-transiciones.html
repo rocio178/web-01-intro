@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        /* selector de atributo */
+        div[id^="caja"]{
+            width: 100px;
+            height : 200px;
+            border : 1px solid black;
+            h3 {
+                text-align: center;
+            }
+        }
+
+        /* Efecto hover */
+      
+
+        #caja1 {
+            transition-duration: 1.5s;
+            width: 200px;
+            height: 200px;
+            background: grey;
+        }
+
+        #caja1:hover {
+            background: indigo;
+        }
+
+        #caja2 {
+            transition-duration: 1.5s;
+            
+        }
+        #caja2:hover {
+            width: 300px;
+          
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1>Animaciones</h1>
+    <div id="caja1"><h3>Caja 1</h3></div>  
+    <div id="caja2"><h3>Caja 2</h3></div>   
+</body>
+</html>

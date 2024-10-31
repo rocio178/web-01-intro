@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Movimiento Circular</title>
+    <style>
+        body {
+            overflow: hidden; /* Evitar barras de desplazamiento */
+            margin: 0; /* Eliminar márgenes */
+        }
+
+        .movible {
+            width: 100px;
+            height: 100px;
+            border-radius : 50px;
+            background-color: blue;
+            position: absolute; /* Necesario para mover el div */
+            animation: rodear 8s linear infinite; /* Aplicar la animación */
+        }
+
+        @keyframes rodear {
+            0% {
+                left: 0; /* Comienza en la parte izquierda */
+                top: 0; /* Comienza en la parte superior */
+            }
+            25% {
+                left: calc(100vw - 100px); /* Mueve a la parte derecha */
+                top: 0; /* Mantiene en la parte superior */
+            }
+            50% {
+                left: calc(100vw - 100px); /* Mantiene en la parte derecha */
+                top: calc(100vh - 100px); /* Mueve a la parte inferior */
+            }
+            75% {
+                left: 0; /* Mueve a la parte izquierda */
+                top: calc(100vh - 100px); /* Mantiene en la parte inferior */
+            }
+            100% {
+                left: 0; /* Regresa a la parte izquierda */
+                top: 0; /* Regresa a la parte superior */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="movible"></div>
+</body>
+</html>

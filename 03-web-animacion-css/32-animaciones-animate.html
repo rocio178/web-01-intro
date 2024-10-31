@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+    <style>
+        body {
+            overflow: hidden; /* Evitar barras de desplazamiento */
+        }
+        /* selector de atributo */
+        div[id^="caja"]{
+            width: 100px;
+            height : 200px;
+            border : 1px solid black;
+            h3 {
+                text-align: center;
+            }
+        }
+
+    
+
+        #caja1 {
+            width: 100px;
+            height: 100px;
+            background: grey;
+            animation: change-color 15s;
+        }
+
+        
+
+        @keyframes change-color {
+            from { background: red; }
+            to { background: green; }
+        }
+
+    
+        #caja2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute; /* Necesario para mover el div */
+            animation: mover 10s linear infinite; /* Aplicar la animación */
+        }
+
+        @keyframes mover {
+            0% {
+                left: 0; /* Comienza desde la izquierda */
+            }
+            100% {
+                left: 100vw; /* Termina en la derecha de la ventana */
+            }
+        }
+
+    
+
+       
+
+    </style>
+</head>
+<body>
+    <h1>Animaciones</h1>
+    <div id="caja1"><h3>Caja 1</h3></div>  
+    <div id="caja2"><h3>Caja 2</h3></div>   
+</body>
+</html>

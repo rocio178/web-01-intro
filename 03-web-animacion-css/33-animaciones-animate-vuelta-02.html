@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efecto Bola de Billar</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden; /* Evitar barras de desplazamiento */
+            background-color: #e0e0e0; /* Color de fondo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .bola {
+            width: 100px; /* Diámetro de la bola */
+            height: 100px; /* Diámetro de la bola */
+            background-color: #007bff; /* Color de la bola */
+            border-radius: 50%; /* Hace que el div sea un círculo */
+            position: absolute; /* Necesario para mover la bola */
+            animation: rodar 2s linear infinite; /* Aplicar la animación */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para darle un efecto 3D */
+        }
+
+        @keyframes rodar {
+            0% {
+                transform: translate(0, 0) rotate(0deg); /* Comienza en la posición inicial */
+            }
+            25% {
+                transform: translate(300px, 0) rotate(90deg); /* Mueve a la derecha y rota */
+            }
+            50% {
+                transform: translate(300px, 300px) rotate(180deg); /* Mueve hacia abajo y rota */
+            }
+            75% {
+                transform: translate(0, 300px) rotate(270deg); /* Mueve a la izquierda y rota */
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg); /* Regresa a la posición inicial */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bola"></div>
+</body>
+</html>

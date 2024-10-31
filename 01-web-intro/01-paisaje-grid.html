@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Montes de Gipuzkoa</title>
+    <!-- CSS INCRUSTADO -->
+    <style>
+    /*     .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        } */
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+     <!-- FIN CSS INCRUSTADO -->
+</head>
+<body>
+    <h1>Paisajes de Gipuzkoa</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="imagenes/ernio.jpg" alt="Monte Ernio">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/txindoki.jpg" alt="Monte Txindoki">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/getaria.jpg" alt="Playa de Getaria">
+        </div>
+        <div class="gallery-item">
+            <img src="imagenes/ondarreta.jpg" alt="Playa de Ondarreta">
+        </div>
+    </div>
+    <script>
+        // Aquí se añadirá el código JavaScript para animaciones
+    </script>
+</body>
+</html>
