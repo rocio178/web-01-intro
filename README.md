@@ -21,6 +21,9 @@ cada pagina debete tener un titulo, la foto al 100% , una descripcion.
 
 
 
+
+
+
 ## 📁 02-web-galeria Galeria con cards materias.html
 
 Código más complejo en el que vamos a trabajar con ficheros vinculados. La estructura de carpetas parte de assets.
