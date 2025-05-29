@@ -4,46 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Montes de Gipuzkoa</title>
+
     <!-- CSS VINCULADO -->
     <link rel="stylesheet" href="99-estilos.css">  
     
 </head>
 <body>
+    <style></style>
+    
     <!-- Cabecera -->
     <header id="cabecera">
-        <img src="imagenes/Logo.gif" width="100" title="Logotipo Empresa Mendi">
+        <img src="imagenes/Logo.gif" aria-flowto="background-color" width="100" title="Logotipo Empresa Mendi">
         <h1 class="titcab">Mendi, Visitas por Gipuzkoa</h1>
     </header>
 
     <!-- Menú de navegación -->
-    <nav id="menu">
-        <a href="99-index.html">INICIO</a>
-        <a href="99-ernio.html">ERNIO</a>
-        <a href="txindoki.html">TXINDOKI</a>
-        <a href="getaria.html">GETARIA</a>
-        <a href="ondarreta.html">ONDARRETA</a>
-        <a href="99-contacto.html">CONTACTO</a>
+    <nav id="menu"> <ul>
+        <li><a href="99-index.html">INICIO</a></li>
+        <div>
+            <li><a href="cetgoria #2"></a>
+        <li><a href="99-ernio.html">ERNIO</a></li>
+        <li><a href="txindoki.html">TXINDOKI</a></li>
+        <li><a href="getaria.html">GETARIA</a></li>
+        <li> <a href="ondarreta.html">ONDARRETA</a></li>
+        <li> <a href="99-contacto.html">CONTACTO</a></li>
+    </ul>
+
     </nav>
 
     <!-- Contenido principal -->
     <h1>Ernio</h1>
+   
+
     <div class="presentacion">
-        <p>El monte Hernio (también conocido como Ernio aunque la Real Academia de la Lengua Vasca (Euskaltzaindia) no recomienda esa última ortografía) tiene una altitud de 1.078 m., conforma un macizo de roca caliza entre los ríos Urola y Oria en su curso bajo, ya cerca del mar pero en el centro geográfico del territorio histórico de Guipúzcoa en el País Vasco (España).</p>
-        <div>
-            <img src="imagenes/ernio.jpg" alt="Monte Ernio" width="300px">
-            <img src="imagenes/ernio.jpg" alt="Monte Ernio" width="300px">
+        <p>El monte Hernio (también conocido como Ernio aunque la Real Academia de la Lengua Vasca (Euskaltzaindia) no recomienda esa última ortografía) tiene una <span>altitud de 1.078 m</span>., conforma un macizo de roca caliza entre los ríos Urola y Oria en su curso bajo, ya cerca del mar pero en el centro geográfico del territorio histórico de Guipúzcoa en el País Vasco (España).</p>
+        <div> 
+            <img src="imagenes/ernio.jpg" alt="Monte Ernio" width="300px"> 
+            <img src="imagenes/ernio.jpg" alt="Monte Ernio" width="300px"> 
             <img src="imagenes/ernio.jpg" alt="Monte Ernio" width="300px">
             <img src="imagenes/ernio.jpg" alt="Monte Ernio" width="300px">
         </div>
     </div>
+     <div class="circulo fondo_rojo"></div>
+
     
     <div id="rutas">
         <h2>Rutas</h2>
-        <ul>
+        <ol>
             <li class="ruta-nombre" data-ruta="iturrioz"><a href="#iturrioz">Iturrioz</a></li>
             <li class="ruta-nombre" data-ruta="Errezil"><a href="#errezil">Ernio desde Errezil</a></li>
             <li class="ruta-nombre" data-ruta="Alkiza"><a href="#alkiza">Alkiza-Ernio-Alkiza</a></li>
-        </ul>
+        </ol>
         <div id="iturrioz" class="ruta-detalle">
             <h3>Iturrioz</h3>
             <table class="tabla-detalle">
@@ -92,8 +103,13 @@
     <!-- Pie de página -->
     <footer id="footer">
         <p>Pie de página</p>
+        <ul><li> numero </li>
+        <li> nombre </li>
+    <li>fecha</li></ul>
         <p>&copy; albertomozodocente@gmail.com 2024</p>
-    </footer>
+    </footer> 
+    <p class="circulo"></p>
+
   
 
     <!-- Aquí se añadirá el código JavaScript para animaciones en el futuro -->
